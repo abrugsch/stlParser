@@ -30,4 +30,3 @@ at the end of the file it will also generate a list of just the individual verte
     Vertex 7:7.88168,0.002,0
     Vertex 8:7.88168,3.998,0
 
-This was compiled with visual studio and stdafx is referenced though not required
