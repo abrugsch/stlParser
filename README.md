@@ -1,6 +1,18 @@
 # stlParser
-A simple parser of .stl 3d files to .txt representations.
+A simple parser of binary .stl 3D files to .txt representations.
 
+**NOTE** 
+stlParser MUST be compiled with a structure alignment of 1 or 2 bytes (default is often 4 bytes) otherwise strange and interesting things may happen. In all likelyhood nothing bad will happen, but SIZEOF may report the size of the STL_DATA structure incorrectly which will throw off the alignment with the .stl internal structure
+
+usage:
+
+    stlparser <path/to/filename>.stl
+
+output:
+
+    <path/to/filename>.txt
+    
+    
 The parser will output a textfile with the same name (but .txt extension) containing a list of all the triangles represented in the .stl
 
     Triangle 3
