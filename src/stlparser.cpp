@@ -1,5 +1,8 @@
 // stlparser.cpp : Defines the entry point for the console application.
 //
+//*********NOTE**********
+//MUST be compiled with structure alignment of 1 or 2 bytes otherwise casting the STL_DATA pointer to the read
+//data may fail in interesting ways.
 
 //#include "stdafx.h"
 #include <iostream>
